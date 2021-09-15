@@ -16,7 +16,12 @@
 
 需要安装node环境 可以参考https://www.runoob.com/nodejs/nodejs-install-setup.html
 
-之后下载源码，在源码文件夹中执行npm install即可配置完成
+之后下载源码，在源码文件夹中cmd执行npm install即可配置完成
+
+![图片](https://user-images.githubusercontent.com/89915832/133355286-a2553664-18f6-4b74-b44b-f869a4291275.png)
+
+![图片](https://user-images.githubusercontent.com/89915832/133356541-c374a915-dc22-4e9b-aac1-4adaa0e724f7.png)
+
 
 基础使用方法为在文件夹目录下打开cmd 输入 node app -u <学号> -p <密码>
 
