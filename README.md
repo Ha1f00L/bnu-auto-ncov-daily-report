@@ -12,9 +12,27 @@
 
 #### 基础教程
 
-#### 自定义打卡时间
+需要安装node环境 可以参考https://www.runoob.com/nodejs/nodejs-install-setup.html
 
-如果希望在其他时间打卡，可以在 `.github/workflows/bot.yml` 中，修改 `cron` 为你需要的时间。
+之后下载源码，在源码文件夹中执行npm install即可配置完成
+
+基础使用方法为在文件夹目录下打开cmd 输入 node app -u <学号> -p <密码>
+
+![图片](https://user-images.githubusercontent.com/89915832/133355286-a2553664-18f6-4b74-b44b-f869a4291275.png)
+
+![图片](https://user-images.githubusercontent.com/89915832/133355752-7dd0a1a2-5c31-4e6a-b658-81b895aaa6a9.png)
+
+或者在同级目录下创建config.json配置文件(不推荐)
+
+![图片](https://user-images.githubusercontent.com/89915832/133356011-f7f9b3d7-b9e2-4f8f-8741-b2a114c2ff0a.png)
+
+![图片](https://user-images.githubusercontent.com/89915832/133356051-5ea71c05-aee7-4cbf-874b-e4e3ebc9b34e.png)
+
+然后命令行执行node app
+
+即可自动打卡
+
+#### 自定义打卡时间
 
 #### 开启微信通知功能
 
