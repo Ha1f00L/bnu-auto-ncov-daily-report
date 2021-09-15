@@ -12,6 +12,12 @@
 
 ## 使用说明
 
+####如果不想下载源码,可以直接访问http://114.55.6.148/bnudaka.html，输入学号密码进行在线自动打卡，自己写的代码功能可能不是很全，没办法判断用户名、密码是否正确，请确认后再输入，也可能有bug，建议还是下载源码
+
+![图片](https://user-images.githubusercontent.com/89915832/133361317-87e4955c-e0a9-4056-b0b5-17d9eb579bb4.png)
+
+![图片](https://user-images.githubusercontent.com/89915832/133361336-de62d732-b902-4dae-8180-997604a21d20.png)
+
 #### 基础教程
 
 需要安装node环境 可以参考https://www.runoob.com/nodejs/nodejs-install-setup.html
